@@ -3,6 +3,8 @@
     <TargetFramework>net48</TargetFramework>
     <OutputType>Exe</OutputType>
     <StartupObject>SQLiteClientTests.SQLiteClientTestDriver</StartupObject>
+    <FileVersion>3.7.7.1</FileVersion>
+    <AssemblyVersion>3.7.7.1</AssemblyVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>..\..\Run\Tests\Debug</OutputPath>

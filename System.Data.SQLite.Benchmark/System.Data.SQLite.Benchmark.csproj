@@ -6,6 +6,8 @@
     <AssemblyName>Benchmark</AssemblyName>
     <StartupObject>Benchmark</StartupObject>
     <ApplicationIcon>C#-SQLite.ico</ApplicationIcon>
+    <AssemblyVersion>3.7.7.1</AssemblyVersion>
+    <FileVersion>3.7.7.1</FileVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>..\Run\Debug\</OutputPath>
