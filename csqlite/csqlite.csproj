@@ -5,4 +5,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;0168;0169;0414;0618;0649;0219;0162;0429</NoWarn>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;0168;0169;0414;0618;0649;0219;0162;0429</NoWarn>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
 </Project>
