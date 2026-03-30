@@ -8,12 +8,8 @@
 **  $Header$
 *************************************************************************
 */
-using System;
-using System.Security;
-using System.Runtime.InteropServices;
-using System.Text;
 
-namespace System.Data.SQLite
+namespace CsSqlite.Client
 {
 	/// <summary>
 	/// Represents the return values for sqlite_exec() and sqlite_step()

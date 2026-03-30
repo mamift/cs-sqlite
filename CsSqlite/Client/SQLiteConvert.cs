@@ -4,18 +4,20 @@
  * 
  * Released to the public domain, use at your own risk!
  ********************************************************/
-namespace System.Data.SQLite
-{
-	using System;
 
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Globalization;
+using System.Runtime.InteropServices;
+using System.Text;
+
+namespace CsSqlite.Client
+{
 	#if !NET_COMPACT_20 && TRACE_WARNING
   using System.Diagnostics;
 
 	#endif
-	using System.Runtime.InteropServices;
-	using System.Collections.Generic;
-	using System.Globalization;
-	using System.Text;
 
 	/// <summary>
 	/// This base class provides datatype conversion services for the SQLite provider.

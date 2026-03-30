@@ -27,11 +27,11 @@
 // OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
+
 using System;
-using System.Data;
 using System.Data.Common;
 
-namespace System.Data.SQLite
+namespace CsSqlite.Client
 {
 	/// <summary>
 	/// Represents the method that will handle the <see cref="SqliteDataAdapter.RowUpdated"/> event 

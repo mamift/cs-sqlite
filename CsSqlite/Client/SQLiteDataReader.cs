@@ -29,6 +29,7 @@
 // OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -36,7 +37,7 @@ using System.Data;
 using System.Data.Common;
 using System.Data.SQLite;
 
-namespace System.Data.SQLite
+namespace CsSqlite.Client
 {
 	public class SQLiteDataReader : DbDataReader, IDataReader, IDisposable, IDataRecord
 	{

@@ -33,14 +33,14 @@
 // OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
+
 using System;
-using System.Text;
 using System.Data;
 using System.Data.Common;
 using System.Data.SQLite;
 using System.Globalization;
 
-namespace System.Data.SQLite
+namespace CsSqlite.Client
 {
 	[System.ComponentModel.DesignerCategory("")]
 	public class SQLiteCommand : DbCommand, ICloneable

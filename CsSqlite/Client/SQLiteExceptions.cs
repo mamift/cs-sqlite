@@ -1,8 +1,6 @@
-using System;
-using System.Data;
 using System.Data.Common;
 
-namespace System.Data.SQLite
+namespace CsSqlite.Client
 {
 	//This is the base exception of all sqlite exceptions
 	public class SQLiteException : DbException

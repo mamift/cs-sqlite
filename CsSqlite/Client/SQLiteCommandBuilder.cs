@@ -27,12 +27,13 @@
 // OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
+
 using System;
 using System.Data;
 using System.Data.Common;
 using System.Text;
 
-namespace System.Data.SQLite
+namespace CsSqlite.Client
 {
 	[System.ComponentModel.DesignerCategory("")]
 	public sealed class SQLiteCommandBuilder : DbCommandBuilder

@@ -27,13 +27,11 @@
 // OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
-using System;
+
 using System.Data;
 using System.Data.Common;
-using System.Collections;
-using System.Text;
 
-namespace System.Data.SQLite
+namespace CsSqlite.Client
 {
 	/// <summary>
 	/// Represents a set of data commands and a database connection that are used 

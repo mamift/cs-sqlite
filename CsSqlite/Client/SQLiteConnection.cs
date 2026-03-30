@@ -29,14 +29,16 @@
 // OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
-using System;
-using System.Data;
-using System.IO;
-using System.Data.Common;
-using System.Text;
-using System.Collections.Generic;
 
-namespace System.Data.SQLite
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.Common;
+using System.Data.SQLite;
+using System.IO;
+using System.Text;
+
+namespace CsSqlite.Client
 {
 	[System.ComponentModel.DesignerCategory("")]
 	public class SQLiteConnection : DbConnection, ICloneable
