@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.37027.9 d17.14
+VisualStudioVersion = 17.14.37027.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Data.SQLite", "System.Data.SQLite\System.Data.SQLite.csproj", "{F1653F20-D47D-4F29-8C55-3C835542AF5F}"
 EndProject
@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Data.SQLite.UnitTest
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Data.SQLite.Benchmark", "System.Data.SQLite.Benchmark\System.Data.SQLite.Benchmark.csproj", "{206175B1-9C0B-40D7-8859-09B6F3A6B1B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csqlite", "csqlite\csqlite.csproj", "{1D9C9C8B-81CD-4973-A15A-EB572FABBE60}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsSqlite", "CsSqlite\CsSqlite.csproj", "{1D9C9C8B-81CD-4973-A15A-EB572FABBE60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +55,9 @@ Global
 		{B83741E9-7012-491E-B15D-3B083506A143} = {5DE3C678-AF97-4E2D-A831-D8B1F782993D}
 		{F3C729A0-E4B1-493B-8F9B-8DDE1A5092AD} = {5DE3C678-AF97-4E2D-A831-D8B1F782993D}
 		{59E27BF3-3D31-42E5-BA21-FAEE135E699F} = {5DE3C678-AF97-4E2D-A831-D8B1F782993D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF1B6C05-76DC-4755-AC44-2039413B0BCE}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Tests\SQLiteClientTests\SQLiteClientTests.csproj
