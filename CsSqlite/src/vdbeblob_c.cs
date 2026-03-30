@@ -1,6 +1,6 @@
 using System.Diagnostics;
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	using sqlite3_stmt = Sqlite3.Vdbe;
 

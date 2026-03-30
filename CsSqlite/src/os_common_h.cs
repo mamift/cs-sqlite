@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using va_list = System.Object;
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	public partial class Sqlite3
 	{

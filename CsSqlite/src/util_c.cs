@@ -11,7 +11,7 @@ using u64 = System.UInt64;
 using Pgno = System.UInt32;
 
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	using sqlite_int64 = System.Int64;
 	using System.Globalization;

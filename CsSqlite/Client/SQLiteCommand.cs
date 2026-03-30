@@ -37,7 +37,7 @@
 using System;
 using System.Data;
 using System.Data.Common;
-using System.Data.SQLite;
+using CsSqlite;
 using System.Globalization;
 
 namespace CsSqlite.Client

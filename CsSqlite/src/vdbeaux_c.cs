@@ -30,7 +30,7 @@ using yDbMask = System.Int64;
 using yDbMask = System.Int32;
 #endif
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	using Op = Sqlite3.VdbeOp;
 	using sqlite3_stmt = Sqlite3.Vdbe;

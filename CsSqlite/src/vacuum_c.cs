@@ -6,7 +6,7 @@ using Pgno = System.UInt32;
 
 using u32 = System.UInt32;
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	using sqlite3_stmt = Sqlite3.Vdbe;
 

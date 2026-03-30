@@ -8,7 +8,7 @@ using u32 = System.UInt32;
 
 using Pgno = System.UInt32;
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	using sqlite3_int64 = System.Int64;
 

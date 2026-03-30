@@ -8,7 +8,7 @@ using u64 = System.UInt64;
 using u8 = System.Byte;
 using sqlite3_int64 = System.Int64;
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	using Op = Sqlite3.VdbeOp;
 	using sqlite_int64 = System.Int64;

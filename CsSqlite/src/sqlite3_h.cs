@@ -1,7 +1,7 @@
 using u8 = System.Byte;
 using System.Diagnostics;
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	public partial class Sqlite3
 	{

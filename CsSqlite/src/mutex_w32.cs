@@ -3,7 +3,7 @@ using DWORD = System.Int32;
 using System.Threading;
 using System;
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	public partial class Sqlite3
 	{

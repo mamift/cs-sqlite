@@ -3,7 +3,7 @@ using System.Diagnostics;
 using u32 = System.UInt32;
 using Pgno = System.UInt32;
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	using sqlite3_pcache = Sqlite3.PCache1;
 	public partial class Sqlite3

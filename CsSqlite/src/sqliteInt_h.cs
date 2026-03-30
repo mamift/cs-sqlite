@@ -35,7 +35,7 @@ using yDbMask = System.Int64;
 using yDbMask = System.Int32;
 #endif
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	using sqlite3_value = Sqlite3.Mem;
 

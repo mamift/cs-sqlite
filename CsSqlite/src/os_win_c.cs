@@ -15,7 +15,7 @@ using u8 = System.Byte;
 #if WINDOWS_PHONE
 using System.IO.IsolatedStorage;
 #endif
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	public partial class Sqlite3
 	{

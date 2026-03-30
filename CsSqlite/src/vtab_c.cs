@@ -4,7 +4,7 @@ using System.Text;
 
 using u8 = System.Byte;
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	public partial class Sqlite3
 	{

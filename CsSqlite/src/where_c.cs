@@ -11,7 +11,7 @@ using u32 = System.UInt32;
 
 using sqlite3_int64 = System.Int64;
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	using sqlite3_value = Sqlite3.Mem;
 	public partial class Sqlite3

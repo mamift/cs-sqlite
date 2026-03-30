@@ -21,7 +21,7 @@ using yDbMask = System.Int64;
 using yDbMask = System.Int32;
 #endif
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	public partial class Sqlite3
 	{

@@ -6,7 +6,7 @@ using i16 = System.Int16;
 using u8 = System.Byte;
 using u16 = System.UInt16;
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	using sqlite3_value = Sqlite3.Mem;
 

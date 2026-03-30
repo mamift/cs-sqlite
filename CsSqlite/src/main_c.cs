@@ -14,7 +14,7 @@ using u64 = System.UInt64;
 using Pgno = System.UInt32;
 using sqlite3_int64 = System.Int64;
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	using sqlite3_value = Sqlite3.Mem;
 

@@ -9,7 +9,7 @@ using Pgno = System.UInt32;
 using sqlite3_int64 = System.Int64;
 using System.Globalization;
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	public partial class Sqlite3
 	{

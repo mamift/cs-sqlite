@@ -1,6 +1,6 @@
 #define SQLITE_OS_WIN
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	public partial class Sqlite3
 	{

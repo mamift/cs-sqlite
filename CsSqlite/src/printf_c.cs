@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	using etByte = System.Boolean;
 	using i64 = System.Int64;

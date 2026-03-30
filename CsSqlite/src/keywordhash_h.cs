@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using System;
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	public partial class Sqlite3
 	{

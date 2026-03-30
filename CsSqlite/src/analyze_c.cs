@@ -4,7 +4,7 @@ using System.Text;
 
 using u8 = System.Byte;
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	using sqlite3_int64 = System.Int64;
 	using sqlite3_stmt = Sqlite3.Vdbe;

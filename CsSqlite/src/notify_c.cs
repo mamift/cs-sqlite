@@ -1,6 +1,6 @@
 using System.Diagnostics;
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	public partial class Sqlite3
 	{

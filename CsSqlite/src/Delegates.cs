@@ -13,7 +13,7 @@ using sqlite3_int64 = System.Int64;
 using u32 = System.UInt32;
 
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	using DbPage = Sqlite3.PgHdr;
 	using sqlite3_pcache = Sqlite3.PCache1;

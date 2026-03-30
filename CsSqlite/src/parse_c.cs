@@ -9,7 +9,7 @@ using u8 = System.Byte;
 using YYCODETYPE = System.Int32;
 using YYACTIONTYPE = System.Int32;
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	using sqlite3ParserTOKENTYPE = Sqlite3.Token;
 

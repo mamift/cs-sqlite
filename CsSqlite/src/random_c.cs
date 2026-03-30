@@ -6,7 +6,7 @@ using u8 = System.Byte;
 using u32 = System.UInt32;
 using u64 = System.UInt64;
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	public partial class Sqlite3
 	{

@@ -4,7 +4,7 @@ using System.Diagnostics;
 using u8 = System.Byte;
 using u32 = System.UInt32;
 
-namespace System.Data.SQLite
+namespace CsSqlite
 {
 	using sqlite3_value = Sqlite3.Mem;
 
