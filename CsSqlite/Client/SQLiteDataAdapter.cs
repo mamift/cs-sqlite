@@ -40,7 +40,6 @@ namespace CsSqlite.Client
 	[System.ComponentModel.DesignerCategory("")]
 	public class SQLiteDataAdapter : DbDataAdapter
 	{
-		#region Public Events
 		/// <summary>
 		/// Occurs during <see cref="DbDataAdapter.Update">Update</see> after a 
 		/// command is executed against the data source. The attempt to update 
@@ -53,8 +52,7 @@ namespace CsSqlite.Client
 		/// is made, so the event fires.
 		/// </summary>
 		public event SQLiteRowUpdatingEventHandler RowUpdating;
-		#endregion
-		#region Contructors
+
 		/// <summary>
 		/// Initializes a new instance of the <see cref="SqliteDataAdapter">SqliteDataAdapter</see> class.
 		/// </summary>
@@ -94,8 +92,7 @@ namespace CsSqlite.Client
 		public SQLiteDataAdapter(string selectCommandText, string connectionString) : this(selectCommandText ,new SQLiteConnection(connectionString))
 		{
 		}
-		#endregion
-		#region Protected Methods
+
 		/// <summary>
 		/// Initializes a new instance of the <see cref="RowUpdatedEventArgs">RowUpdatedEventArgs</see> class.
 		/// </summary>
@@ -141,6 +138,5 @@ namespace CsSqlite.Client
 			if(RowUpdated != null)
 				RowUpdated(this, args);
 		}
-		#endregion
 	}
 }

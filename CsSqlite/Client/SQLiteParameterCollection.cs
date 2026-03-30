@@ -43,12 +43,9 @@ namespace CsSqlite.Client
 {
 	public class SQLiteParameterCollection : DbParameterCollection
 	{
-	
-		#region Fields
 		List<SQLiteParameter> numeric_param_list = new List<SQLiteParameter>();
 		Dictionary<string, int> named_param_hash = new Dictionary<string, int>();
-		#endregion
-		#region Private Methods
+
 		private void CheckSqliteParam(object value)
 		{
 			if(!(value is SQLiteParameter))
@@ -81,8 +78,7 @@ namespace CsSqlite.Client
 			}
 			return name;
 		}
-		#endregion
-		#region Properties
+
 		private bool isPrefixed(string parameterName)
 		{
 			return parameterName.Length > 1 && (parameterName[0] == ':' || parameterName[0] == '$' || parameterName[0] == '@');
@@ -151,8 +147,7 @@ namespace CsSqlite.Client
 		{
 			get { return ((IList)this.numeric_param_list).SyncRoot; }
 		}
-		#endregion
-		#region Public Methods
+
 		public override void AddRange(Array values)
 		{
 			if(values == null || values.Length == 0)
@@ -283,6 +278,5 @@ namespace CsSqlite.Client
 		{
 			RemoveAt(param.ParameterName);
 		}
-		#endregion
 	}
 }

@@ -45,15 +45,13 @@ namespace CsSqlite.Client
 	[System.ComponentModel.DesignerCategory("")]
 	public class SQLiteCommand : DbCommand, ICloneable
 	{
-		#region Fields
 		private SQLiteConnection parent_conn;
 		private SQLiteTransaction transaction;
 		private string sql;
 		private SQLiteParameterCollection sql_params;
 		private bool prepared = false;
 		private bool _designTimeVisible = true;
-		#endregion
-		#region Constructors and destructors
+
 		internal SQLiteCommand() : this(null)
 		{
 		}
@@ -74,8 +72,7 @@ namespace CsSqlite.Client
 			parent_conn = dbConn;
 			transaction = trans;			
 		}
-		#endregion
-		#region Properties
+
 		public override string CommandText
 		{
 			get
@@ -135,8 +132,7 @@ namespace CsSqlite.Client
 		public override bool DesignTimeVisible { get; set; }
 
 		public override UpdateRowSource UpdatedRowSource { get; set; }
-		#endregion
-		#region Internal Methods
+
 		internal int NumChanges()
 		{
 			//if (parent_conn.Version == 3)
@@ -313,8 +309,7 @@ namespace CsSqlite.Client
 			// err is either ROW or DONE.
 			return err == SQLiteError.ROW;
 		}
-		#endregion
-		#region Public Methods
+
 		object ICloneable.Clone()
 		{
 			var res = new SQLiteCommand(sql, parent_conn, transaction);
@@ -495,6 +490,5 @@ namespace CsSqlite.Client
 			return Sqlite3.sqlite3_errmsg(parent_conn.Handle2);
 			//return Marshal.PtrToStringUni (Sqlite.sqlite3_errmsg16 (parent_conn.Handle));
 		}
-		#endregion
 	}
 }

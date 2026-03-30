@@ -36,8 +36,6 @@ namespace CsSqlite.Client
 {
 	public class SQLiteParameter : DbParameter
 	{
-
-		#region Fields
 		private string name;
 		private DbType type;
 		private DbType originalType;
@@ -51,8 +49,7 @@ namespace CsSqlite.Client
 		private int size;
 		private bool isNullable;
 		private bool sourceColumnNullMapping;
-		#endregion
-		#region Constructors and destructors
+
 		public SQLiteParameter()
 		{
 			type = DbType.String;
@@ -85,8 +82,7 @@ namespace CsSqlite.Client
 		{
 			source_column = src_column;
 		}
-		#endregion
-		#region Properties
+
 		public override DbType DbType
 		{
 			get { return type; }
@@ -162,12 +158,10 @@ namespace CsSqlite.Client
 			get { return param_value; }
 			set { param_value = value; }
 		}
-		#endregion
-		#region methods
+
 		public override void ResetDbType()
 		{
 			type = originalType;
 		}
-		#endregion
 	}
 }

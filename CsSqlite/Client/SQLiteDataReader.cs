@@ -41,8 +41,6 @@ namespace CsSqlite.Client
 {
 	public class SQLiteDataReader : DbDataReader, IDataReader, IDisposable, IDataRecord
 	{
-
-		#region Fields
 		private SQLiteCommand command;
 		private List<object[]> rows;
 		private string[] columns;
@@ -52,8 +50,7 @@ namespace CsSqlite.Client
 		private bool reading;
 		private int records_affected;
 		private string[] decltypes;
-		#endregion
-		#region Constructors and destructors
+
 		internal SQLiteDataReader(SQLiteCommand cmd, Sqlite3.Vdbe pVm, int version)
 		{
 			command = cmd;
@@ -66,8 +63,7 @@ namespace CsSqlite.Client
 			ReadpVm(pVm, version, cmd);
 			ReadingDone();
 		}
-		#endregion
-		#region Properties
+
 		public override int Depth
 		{
 			get { return 0; }
@@ -100,8 +96,7 @@ namespace CsSqlite.Client
 		{
 			get { return records_affected; }
 		}
-		#endregion
-		#region Internal Methods
+
 		internal void ReadpVm(Sqlite3.Vdbe pVm, int version, SQLiteCommand cmd)
 		{
 			int pN;
@@ -223,8 +218,7 @@ namespace CsSqlite.Client
 			records_affected = command.NumChanges();
 			reading = false;
 		}
-		#endregion
-		#region  Public Methods
+
 		public override void Close()
 		{
 			closed = true;
@@ -316,8 +310,7 @@ namespace CsSqlite.Client
 		{
 			return NextResult();
 		}
-		#endregion
-		#region IDataRecord getters
+
 		public override bool GetBoolean(int i)
 		{
 			return Convert.ToBoolean(((object[])rows[current_row])[i]);
@@ -486,7 +479,7 @@ namespace CsSqlite.Client
 		{
 			get { return FieldCount; }
 		}
-		#endregion
+
 		private enum DeclaredMode
 		{
 			Native = 0,

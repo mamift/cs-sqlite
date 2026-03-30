@@ -44,7 +44,6 @@ namespace CsSqlite.Client
 		private const Int32 DEF_VERSION = 2;
 		private const Encoding DEF_ENCODING = null;
 		private const Int32 DEF_BUSYTIMEOUT = 0;
-		#region
 		private string _uri;
 		private Int32 _mode;
 		private Int32 _version;
@@ -52,8 +51,7 @@ namespace CsSqlite.Client
 		private Int32 _busy_timeout;
 		private static Dictionary <string, string> _keywords;
 		// for mapping duplicate keywords
-		#endregion
-		#region Constructors
+
 		public SQLiteConnectionStringBuilder() : this (String.Empty)
 		{
 		}
@@ -77,8 +75,7 @@ namespace CsSqlite.Client
 			_keywords["BUSYTIMEOUT"] = "Busy Timeout";
 			_keywords["ENCODING"] = "Encoding";
 		}
-		#endregion
-		#region Properties
+
 		public string DataSource
 		{ 
 			get { return _uri; }
@@ -163,8 +160,7 @@ namespace CsSqlite.Client
 		{ 
 			get { return base.Values; }
 		}
-		#endregion
-		#region Methods
+
 		private void Init()
 		{
 			_uri = DEF_URI;
@@ -205,8 +201,7 @@ namespace CsSqlite.Client
 			}
 			return base.TryGetValue(_keywords[keyword.ToUpper().Trim()], out value);
 		}
-		#endregion
-		#region Private Methods
+
 		private string MapKeyword(string keyword)
 		{
 			keyword = keyword.ToUpper().Trim();
@@ -300,6 +295,5 @@ namespace CsSqlite.Client
 				return false;
 			throw new ArgumentException(String.Format("Invalid boolean value: {0}", value.ToString()));
 		}
-		#endregion
 	}
 }

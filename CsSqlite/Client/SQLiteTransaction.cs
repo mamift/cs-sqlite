@@ -33,18 +33,15 @@ namespace CsSqlite.Client
 {
 	public sealed class SQLiteTransaction : DbTransaction
 	{
-		#region Fields
 		private IsolationLevel _isolationLevel;
 		private SQLiteConnection _connection;
 		private bool _open;
-		#endregion
-		#region Contructors and destructors
+
 		internal SQLiteTransaction()
 		{
 			_open = true;
 		}
-		#endregion
-		#region Public Properties
+
 		protected override DbConnection DbConnection
 		{
 			get { return _connection; } 
@@ -64,8 +61,7 @@ namespace CsSqlite.Client
 		{
 			_isolationLevel = level;
 		}
-		#endregion
-		#region Public Methods
+
 		public override void Commit()
 		{
 			if(_connection == null || _connection.State != ConnectionState.Open)
@@ -158,6 +154,5 @@ namespace CsSqlite.Client
 				throw ex;
 			}
 		}
-		#endregion
 	}
 }

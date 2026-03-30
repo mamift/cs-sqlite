@@ -106,7 +106,7 @@ namespace CsSqlite.Client
 			_datetimeFormat = fmt;
 			_datetimeKind = kind;
 		}
-		#region UTF-8 Conversion Functions
+
 		/// <summary>
 		/// Converts a string to a UTF-8 encoded byte array sized to include a null-terminating character.
 		/// </summary>
@@ -173,8 +173,7 @@ namespace CsSqlite.Client
 
 			return _utf8.GetString(byteArray, 0, nativestringlen);
 		}
-		#endregion
-		#region DateTime Conversion Functions
+
 		/// <summary>
 		/// Converts a string into a DateTime, using the current DateTimeFormat specified for the connection when it was opened.
 		/// </summary>
@@ -406,7 +405,7 @@ namespace CsSqlite.Client
 		{
 			return ToDateTime(ToString(ptr, len));
 		}
-		#endregion
+
 		/// <summary>
 		/// Smart method of splitting a string.  Skips quoted elements, removes the quotes.
 		/// </summary>
@@ -527,7 +526,6 @@ namespace CsSqlite.Client
 					throw new ArgumentException("source");
 			}
 		}
-		#region Type Conversions
 		/// <summary>
 		/// Determines the data type of a column in a statement
 		/// </summary>
@@ -922,7 +920,7 @@ namespace CsSqlite.Client
 
 			return defaultDbType;
 		}
-		#endregion
+
 		private static object _syncRoot = new object();
 		private static Dictionary<string, SQLiteTypeNames> _typeNames = null;
 	}
@@ -1127,7 +1125,6 @@ namespace CsSqlite.Client
 
 	internal class TypeNameStringComparer : IEqualityComparer<string>
 	{
-		#region IEqualityComparer<string> Members
 		public bool Equals(string left, string right)
 		{
 			return String.Equals(left, right, StringComparison.OrdinalIgnoreCase);
@@ -1152,6 +1149,5 @@ namespace CsSqlite.Client
       else
 				throw new ArgumentNullException("value");
 		}
-		#endregion
 	}
 }

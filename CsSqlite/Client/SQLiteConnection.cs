@@ -43,8 +43,6 @@ namespace CsSqlite.Client
 	[System.ComponentModel.DesignerCategory("")]
 	public class SQLiteConnection : DbConnection, ICloneable
 	{
-
-		#region Fields
 		private string conn_str;
 		private string db_file;
 		private int db_mode;
@@ -56,8 +54,7 @@ namespace CsSqlite.Client
 		private Encoding encoding;
 		private int busy_timeout;
 		bool disposed;
-		#endregion
-		#region Constructors and destructors
+
 		public SQLiteConnection()
 		{
 			db_file = null;
@@ -91,8 +88,7 @@ namespace CsSqlite.Client
 				base.Dispose(disposing);
 			}
 		}
-		#endregion
-		#region Properties
+
 		protected override DbProviderFactory DbProviderFactory
 		{
 			get
@@ -175,8 +171,7 @@ namespace CsSqlite.Client
 				busy_timeout = value < 0 ? 0 : value;
 			}
 		}
-		#endregion
-		#region Private Methods
+
 		private void SetConnectionString(string connstring)
 		{
 			if(connstring == null)
@@ -274,8 +269,7 @@ namespace CsSqlite.Client
 				}
 			}
 		}
-		#endregion
-		#region Internal Methods
+
 		internal void StartExec()
 		{
 			// use a mutex here
@@ -332,8 +326,7 @@ namespace CsSqlite.Client
 			}
 			return ls;
 		}
-		#endregion
-		#region Public Methods
+
 		object ICloneable.Clone()
 		{
 			return new SQLiteConnection(ConnectionString);
@@ -905,6 +898,5 @@ namespace CsSqlite.Client
 			FileStream fs = File.Create(databaseFileName);
 			fs.Close();
 		}
-		#endregion
 	}
 }
