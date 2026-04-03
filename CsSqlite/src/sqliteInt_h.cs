@@ -1,8 +1,6 @@
 #define SQLITE_MAX_EXPR_DEPTH
 
 using System;
-using System.Diagnostics;
-using System.Runtime.InteropServices;
 using System.Text;
 
 using Bitmask = System.UInt64;

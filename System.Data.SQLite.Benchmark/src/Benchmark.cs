@@ -1,9 +1,10 @@
 using System;
 using System.IO;
 using System.Data;
-using System.Data.SQLite;
 using System.Data.SQLite.Benchmark;
 using System.Diagnostics;
+using CsSqlite;
+using CsSqlite.Client;
 
 /*
 * Benchmark Test for both SQLite and C#-SQLite

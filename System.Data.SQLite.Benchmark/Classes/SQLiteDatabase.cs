@@ -1,7 +1,5 @@
-using System;
-using System.Data;
-using System.Data.SQLite;
 using System.Collections;
+using CsSqlite;
 
 namespace System.Data.SQLite.Benchmark
 {

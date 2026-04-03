@@ -1,7 +1,5 @@
 using System;
 using System.Diagnostics;
-using System.Text;
-
 using u8 = System.Byte;
 
 namespace CsSqlite

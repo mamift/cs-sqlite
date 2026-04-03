@@ -1,7 +1,3 @@
-using System;
-using System.Diagnostics;
-using System.Text;
-
 namespace CsSqlite
 {
 	using sqlite3_value = Sqlite3.Mem;

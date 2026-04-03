@@ -1,7 +1,3 @@
-using System;
-using System.Diagnostics;
-using System.Threading;
-
 namespace CsSqlite
 {
 	public partial class Sqlite3

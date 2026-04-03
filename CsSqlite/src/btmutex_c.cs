@@ -1,5 +1,3 @@
-using System.Diagnostics;
-
 namespace CsSqlite
 {
 	public partial class Sqlite3

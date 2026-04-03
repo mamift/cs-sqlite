@@ -1,7 +1,4 @@
-using System;
 using System.Diagnostics;
-using System.Text;
-
 using u32 = System.UInt32;
 using Pgno = System.UInt32;
 

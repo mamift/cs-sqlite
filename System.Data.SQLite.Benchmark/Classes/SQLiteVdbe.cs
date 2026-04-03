@@ -1,5 +1,4 @@
-using System;
-using System.Data.SQLite;
+using CsSqlite;
 
 namespace System.Data.SQLite.Benchmark
 {

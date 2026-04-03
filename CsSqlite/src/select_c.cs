@@ -1,7 +1,6 @@
 #define SQLITE_MAX_EXPR_DEPTH
 using System;
 using System.Diagnostics;
-using System.Text;
 
 using i16 = System.Int16;
 using u8 = System.Byte;

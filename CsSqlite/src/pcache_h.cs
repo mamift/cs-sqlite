@@ -1,6 +1,3 @@
-using System;
-using System.Diagnostics;
-using System.IO;
 
 using i16 = System.Int16;
 using u32 = System.UInt32;

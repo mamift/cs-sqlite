@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using va_list = System.Object;
 
 namespace CsSqlite

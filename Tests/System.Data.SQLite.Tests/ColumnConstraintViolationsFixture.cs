@@ -1,6 +1,5 @@
-using System;
 using NUnit.Framework;
-using System.Data.SQLite;
+using CsSqlite.Client;
 
 namespace System.Data.SQLite.Tests
 {

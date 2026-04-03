@@ -1,7 +1,5 @@
 using System;
 using System.Diagnostics;
-using System.Text;
-
 using Bitmask = System.UInt64;
 using i16 = System.Int16;
 using u8 = System.Byte;
@@ -16,8 +14,6 @@ using ynVar = System.Int32;
 
 namespace CsSqlite
 {
-	using sqlite3_value = Sqlite3.Mem;
-
 	public partial class Sqlite3
 	{
 		/*
