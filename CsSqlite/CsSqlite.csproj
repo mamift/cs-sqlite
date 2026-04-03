@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+	  <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;0168;0169;0414;0618;0649;0219;0162;0429</NoWarn>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>$(DefineConstants);DEBUG;NDEBUG;SQLITE_ASCII;SQLITE_DEFAULT_FOREIGN_KEYS;SQLITE_DISABLE_LFS;SQLITE_ENABLE_OVERSIZE_CELL_CHECK;SQLITE_MUTEX_OMIT;SQLITE_OMIT_AUTHORIZATION;SQLITE_OMIT_DEPRECATED;SQLITE_OMIT_GET_TABLE;SQLITE_OMIT_INCRBLOB;SQLITE_OMIT_LOOKASIDE;SQLITE_OMIT_SHARED_CACHE;SQLITE_OMIT_UTF16;SQLITE_OMIT_WAL;SQLITE_OS_WIN;SQLITE_SYSTEM_MALLOC;TRUE;VDBE_PROFILE_OFF;DEBUG</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;0168;0169;0414;0618;0649;0219;0162;0429</NoWarn>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>$(DefineConstants);NDEBUG;SQLITE_ASCII;SQLITE_DEFAULT_FOREIGN_KEYS;SQLITE_DISABLE_LFS;SQLITE_ENABLE_OVERSIZE_CELL_CHECK;SQLITE_MUTEX_OMIT;SQLITE_OMIT_AUTHORIZATION;SQLITE_OMIT_DEPRECATED;SQLITE_OMIT_GET_TABLE;SQLITE_OMIT_INCRBLOB;SQLITE_OMIT_LOOKASIDE;SQLITE_OMIT_SHARED_CACHE;SQLITE_OMIT_UTF16;SQLITE_OMIT_WAL;SQLITE_OS_WIN;SQLITE_SYSTEM_MALLOC;TRUE;VDBE_PROFILE_OFF;DEBUG</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PolySharp" Version="1.15.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

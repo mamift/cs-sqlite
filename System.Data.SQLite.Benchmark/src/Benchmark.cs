@@ -155,11 +155,7 @@ public class Benchmark
 		db.ExecuteNonQuery("END");
 		timer[1, 3] = DateTime.Now.Ticks - start;
 		db.CloseDatabase();
-#if NET_35
-		Sqlite3.Shutdown();
-#else
 		Sqlite3.sqlite3_shutdown();
-#endif
 	}
 
 	private static void TestSQLite()
