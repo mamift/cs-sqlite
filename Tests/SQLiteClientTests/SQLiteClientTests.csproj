@@ -43,6 +43,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\System.Data.SQLite\System.Data.SQLite.csproj" />
+    <ProjectReference Include="..\..\CsSqlite\CsSqlite.csproj" />
   </ItemGroup>
 </Project>

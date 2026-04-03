@@ -15,6 +15,9 @@
     <ConsolePause>False</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\CsSqlite\CsSqlite.csproj" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="System.Data.Linq" />
     <Reference Include="nunit.framework">
       <HintPath>..\..\Dependencies\nunit.framework.dll</HintPath>
@@ -30,8 +33,5 @@
     <None Update="Sql\Northwind.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\System.Data.SQLite\System.Data.SQLite.csproj" />
   </ItemGroup>
 </Project>

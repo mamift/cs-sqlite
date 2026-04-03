@@ -22,9 +22,9 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System.Management" />
+    <ProjectReference Include="..\CsSqlite\CsSqlite.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\System.Data.SQLite\System.Data.SQLite.csproj" />
+    <Reference Include="System.Management" />
   </ItemGroup>
 </Project>
